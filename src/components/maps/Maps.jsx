@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchEmployees } from "../../store/actions/employeeActions";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
-import Loading from "../loading/Loading";
+import Loading from "../Loading/Loading";
 
 import { marker1, marker2, marker3, marker4 } from "../../assets";
 
