@@ -1,0 +1,144 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Khoirul",
+      "attendances": [
+        {
+          "name": "Rumah Mbah",
+          "lat": -6.247772,
+          "lng": 107.00615,
+          "date": "06/02/2023",
+          "IdUser": 1,
+          "status": "on project"
+        },
+        {
+          "name": "Fotokopi Sabilillah",
+          "lat": -6.20673,
+          "lng": 106.975448,
+          "date": "06/01/2023",
+          "IdUser": 1,
+          "status": "on project"
+        },
+        {
+          "name": "BCA KCU Bekasi",
+          "lat": -6.237844,
+          "lng": 106.99341,
+          "date": "07/01/2023",
+          "IdUser": 1,
+          "status": "on project"
+        },
+        {
+          "name": "Ahass Bekasi Motor",
+          "lat": -6.251181,
+          "lng": 107.000864,
+          "date": "08/01/2023",
+          "IdUser": 1,
+          "status": "on project"
+        },
+        {
+          "name": "Summarecon Mal Bekasi",
+          "lat": -6.219089,
+          "lng": 106.983414,
+          "date": "09/02/2023",
+          "IdUser": 1,
+          "status": "on project"
+        },
+        {
+          "name": "Grand Galaxy City",
+          "lat": -6.267113,
+          "lng": 106.975403,
+          "date": "06/02/2023",
+          "IdUser": 1,
+          "status": "on project"
+        },
+        {
+          "name": "Grand Kota Bintang",
+          "lat": -6.250583,
+          "lng": 106.958652,
+          "date": "06/02/2023",
+          "IdUser": 1,
+          "status": "on project"
+        },
+        {
+          "name": "Situ Rawa Gede",
+          "lat": -6.289796,
+          "lng": 106.969941,
+          "date": "07/02/2023",
+          "IdUser": 1,
+          "status": "on leave"
+        },
+        {
+          "name": "McD Duren Sawit",
+          "lat": -6.22826,
+          "lng": 106.92333,
+          "date": "08/02/2023",
+          "IdUser": 1,
+          "status": "sick"
+        },
+        {
+          "name": "Sinar Mas Stationary",
+          "lat": -6.22995,
+          "lng": 106.984992,
+          "date": "09/02/2023",
+          "IdUser": 1,
+          "status": "on project"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Ariffin",
+      "attendances": [
+        {
+          "name": "Lokasi 1",
+          "lat": -6.298504,
+          "lng": 107.039123,
+          "date": "06/02/2023",
+          "IdUser": 2,
+          "status": "sick"
+        },
+        {
+          "name": "Lokasi 2",
+          "lat": -6.265226,
+          "lng": 107.053617,
+          "date": "06/02/2023",
+          "IdUser": 2,
+          "status": "sick"
+        },
+        {
+          "name": "Lokasi 3",
+          "lat": -6.279633,
+          "lng": 106.995641,
+          "date": "07/02/2023",
+          "IdUser": 2,
+          "status": "sick"
+        },
+        {
+          "name": "Lokasi 4",
+          "lat": -6.247977,
+          "lng": 107.087912,
+          "date": "08/02/2023",
+          "IdUser": 2,
+          "status": "on leave"
+        },
+        {
+          "name": "Lokasi 5",
+          "lat": -6.230525,
+          "lng": 107.049126,
+          "date": "09/02/2023",
+          "IdUser": 2,
+          "status": "on leave"
+        },
+        {
+          "name": "Lokasi 6",
+          "lat": -6.246557,
+          "lng": 107.048921,
+          "date": "06/02/2023",
+          "IdUser": 2,
+          "status": "on project"
+        }
+      ]
+    }
+  ]
+}
