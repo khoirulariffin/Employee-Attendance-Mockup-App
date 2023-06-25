@@ -2,32 +2,14 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchEmployees } from "../../store/actions/employeeActions";
 import Loading from "../Loading/Loading";
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  LineElement,
-  Title,
-  Tooltip,
-  Legend,
-} from "chart.js";
-import { Line } from "react-chartjs-2";
-
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  LineElement,
-  Title,
-  Tooltip,
-  Legend
-);
+import SelectOption from "../SelectOption/SelectOption";
+import Chartjs from "./Chartjs/Chartjs";
 
 const AttendanceHistory = () => {
   const dispatch = useDispatch();
   const { employees } = useSelector((state) => state.employees);
   const [isLoading, setIsLoading] = useState(true);
+  const [filterOption, setFilterOption] = useState("daily");
 
   let totalEmployeeAttendance = [];
 
@@ -47,20 +29,16 @@ const AttendanceHistory = () => {
     employees.forEach((e) => {
       totalEmployeeAttendance = totalEmployeeAttendance.concat(e.attendances);
     });
-    console.log(totalEmployeeAttendance);
   }
 
-  const data = {
-    labels: totalEmployeeAttendance.map((e) => e.date),
-    datasets: employees.map((employee, index) => ({
-      label: `Employee ${index + 1} Attendance`,
-      data: employee.attendances.map((e) => e),
-      borderColor: `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(
-        Math.random() * 256
-      )}, ${Math.floor(Math.random() * 256)})`,
-      backgroundColor: "rgba(255, 99, 132, 0.5)",
-    })),
+  const handleFilterChange = (event) => {
+    setFilterOption(event.target.value);
   };
+
+  const options = [
+    { value: "daily", display: "Daily" },
+    { value: "monthly", display: "Monthly" },
+  ];
 
   return (
     <section className="flex-auto w-full">
@@ -72,7 +50,12 @@ const AttendanceHistory = () => {
         <div className="w-2 bg-blue-300 h-full py-1">&nbsp;</div>
       </div>
       <div>
-        <Line data={data} />
+        <SelectOption
+          value={filterOption}
+          onChange={handleFilterChange}
+          options={options}
+        />
+        <Chartjs employees={employees} filterOption={filterOption} />
       </div>
     </section>
   );
