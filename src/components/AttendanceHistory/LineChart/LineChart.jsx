@@ -40,7 +40,7 @@ const getRandomColor = () => {
   return colors[Math.floor(Math.random() * colors.length)];
 };
 
-const Chartjs = (props) => {
+const LineChart = (props) => {
   // Mengambil data absen dengan status "in the office" dari data JSON
   const officeAttendances = props.employees.reduce((acc, employee) => {
     const inOfficeAttendances = employee.attendances.filter(
@@ -122,4 +122,4 @@ const Chartjs = (props) => {
   return <Line data={chartData} options={chartOptions} />;
 };
 
-export default Chartjs;
+export default LineChart;

@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchEmployees } from "../../store/actions/employeeActions";
 import Loading from "../Loading/Loading";
 import SelectOption from "../SelectOption/SelectOption";
-import Chartjs from "./Chartjs/Chartjs";
+import LineChart from "./LineChart/LineChart";
 
 const AttendanceHistory = () => {
   const dispatch = useDispatch();
@@ -55,7 +55,7 @@ const AttendanceHistory = () => {
           onChange={handleFilterChange}
           options={options}
         />
-        <Chartjs employees={employees} filterOption={filterOption} />
+        <LineChart employees={employees} filterOption={filterOption} />
       </div>
     </section>
   );

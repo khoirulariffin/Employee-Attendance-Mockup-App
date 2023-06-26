@@ -6,7 +6,7 @@ import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import Loading from "../Loading/Loading";
 
-import { marker1, marker2, marker3, marker4 } from "../../assets";
+import { marker1, marker2, marker3, marker4, marker5 } from "../../assets";
 
 const Maps = () => {
   const [centerPos, setCenterPos] = useState({
@@ -27,17 +27,22 @@ const Maps = () => {
     iconSize: [35, 45],
   });
 
-  // const pin3 = new L.icon({
-  //   iconUrl: marker3,
-  //   iconSize: [35, 45],
-  // });
+  const pin3 = new L.icon({
+    iconUrl: marker3,
+    iconSize: [35, 45],
+  });
 
-  // const pin4 = new L.icon({
-  //   iconUrl: marker4,
-  //   iconSize: [35, 45],
-  // });
+  const pin4 = new L.icon({
+    iconUrl: marker4,
+    iconSize: [35, 45],
+  });
 
-  // const pins = [pin1, pin2, pin3, pin4];
+  const pin5 = new L.icon({
+    iconUrl: marker5,
+    iconSize: [35, 45],
+  });
+
+  const pins = [pin1, pin2, pin3, pin4, pin5];
 
   const dispatch = useDispatch();
   const { employees } = useSelector((state) => state.employees);
@@ -76,15 +81,15 @@ const Maps = () => {
           url={url}
         />
         {totalEmployeeAttendance.map((employee, index) => {
-          // const selectedIcon = pins[index % pins.length];
+          const selectedIcon = pins[index % pins.length];
           return (
             <Marker
               position={[employee.lat, employee.lng]}
-              icon={employee.IdUser == 1 ? pin1 : pin2}
+              icon={selectedIcon}
               key={index}
             >
               <Popup>
-                <h1>Name: {employee.IdUser == 1 ? "Khoirul" : "Ariffin"}</h1>
+                <h1>Name: {employees[employee.IdUser - 1].name}</h1>
                 <h2>Location: {employee.name}</h2>
                 <h3>Status: {employee.status}</h3>
               </Popup>

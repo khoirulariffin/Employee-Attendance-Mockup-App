@@ -169,6 +169,176 @@
           "date": "2023-07-03",
           "IdUser": 2,
           "status": "in the office"
+        },
+        {
+          "name": "Rumah Teman",
+          "lat": -6.246557,
+          "lng": 107.048921,
+          "date": "2023-07-04",
+          "IdUser": 2,
+          "status": "on project"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Employee 3",
+      "attendances": [
+        {
+          "name": "Location 3",
+          "lat": -6.253317,
+          "lng": 107.00687,
+          "date": "2023-06-29",
+          "IdUser": 3,
+          "status": "in the office"
+        },
+        {
+          "name": "Location 3",
+          "lat": -6.249192,
+          "lng": 107.012456,
+          "date": "2023-06-30",
+          "IdUser": 3,
+          "status": "in the office"
+        },
+        {
+          "name": "Location 3",
+          "lat": -6.246104,
+          "lng": 107.018365,
+          "date": "2023-07-01",
+          "IdUser": 3,
+          "status": "in the office"
+        },
+        {
+          "name": "Location 3",
+          "lat": -6.242894,
+          "lng": 107.024197,
+          "date": "2023-07-02",
+          "IdUser": 3,
+          "status": "in the office"
+        },
+        {
+          "name": "Location 3",
+          "lat": -6.239919,
+          "lng": 107.030046,
+          "date": "2023-07-03",
+          "IdUser": 3,
+          "status": "in the office"
+        },
+        {
+          "name": "Location 3",
+          "lat": -6.237165,
+          "lng": 107.035909,
+          "date": "2023-07-04",
+          "IdUser": 3,
+          "status": "in the office"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Employee 4",
+      "attendances": [
+        {
+          "name": "Location 4",
+          "lat": -6.275464,
+          "lng": 107.007258,
+          "date": "2023-06-29",
+          "IdUser": 4,
+          "status": "in the office"
+        },
+        {
+          "name": "Location 4",
+          "lat": -6.27083,
+          "lng": 107.013013,
+          "date": "2023-06-30",
+          "IdUser": 4,
+          "status": "in the office"
+        },
+        {
+          "name": "Location 4",
+          "lat": -6.266307,
+          "lng": 107.018791,
+          "date": "2023-07-01",
+          "IdUser": 4,
+          "status": "in the office"
+        },
+        {
+          "name": "Location 4",
+          "lat": -6.2619,
+          "lng": 107.024593,
+          "date": "2023-07-02",
+          "IdUser": 4,
+          "status": "in the office"
+        },
+        {
+          "name": "Location 4",
+          "lat": -6.257608,
+          "lng": 107.030417,
+          "date": "2023-07-03",
+          "IdUser": 4,
+          "status": "sick"
+        },
+        {
+          "name": "Location 4",
+          "lat": -6.253431,
+          "lng": 107.036264,
+          "date": "2023-07-04",
+          "IdUser": 4,
+          "status": "in the office"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Employee 5",
+      "attendances": [
+        {
+          "name": "Location 5",
+          "lat": -6.301673,
+          "lng": 106.998181,
+          "date": "2023-06-29",
+          "IdUser": 5,
+          "status": "in the office"
+        },
+        {
+          "name": "Location 5",
+          "lat": -6.298341,
+          "lng": 107.003946,
+          "date": "2023-06-30",
+          "IdUser": 5,
+          "status": "in the office"
+        },
+        {
+          "name": "Location 5",
+          "lat": -6.295028,
+          "lng": 107.009724,
+          "date": "2023-07-01",
+          "IdUser": 5,
+          "status": "in the office"
+        },
+        {
+          "name": "Location 5",
+          "lat": -6.291732,
+          "lng": 107.015516,
+          "date": "2023-07-01",
+          "IdUser": 5,
+          "status": "in the office"
+        },
+        {
+          "name": "Location 5",
+          "lat": -6.288453,
+          "lng": 107.021321,
+          "date": "2023-07-01",
+          "IdUser": 5,
+          "status": "in the office"
+        },
+        {
+          "name": "Location 5",
+          "lat": -6.28519,
+          "lng": 107.027139,
+          "date": "2023-07-01",
+          "IdUser": 5,
+          "status": "in the office"
         }
       ]
     }
