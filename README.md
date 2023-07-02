@@ -1,4 +1,4 @@
-# Office Attendance Application
+# Employee Attendance Mockup App
 
 ![Office Attendance Application](./src/assets/ATENDZ.png)
 
