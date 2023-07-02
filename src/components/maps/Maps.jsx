@@ -3,46 +3,17 @@ import { MapContainer, TileLayer, useMap, Marker, Popup } from "react-leaflet";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchEmployees } from "../../store/actions/employeeActions";
 import "leaflet/dist/leaflet.css";
-import L from "leaflet";
 import Loading from "../Loading/Loading";
-
-import { marker1, marker2, marker3, marker4, marker5 } from "../../assets";
+import pins from "../../helpers/Pins";
 
 const Maps = () => {
+  const maptilerKey = import.meta.env.VITE_MAPTILER;
   const [centerPos, setCenterPos] = useState({
     lat: -6.239588,
     lng: 106.984413,
   });
   const zoomLevel = 12;
-  const url =
-    "https://api.maptiler.com/maps/streets-v2/256/{z}/{x}/{y}.png?key=AP8nqUUTBOTduZVX9rQl";
-
-  const pin1 = new L.icon({
-    iconUrl: marker1,
-    iconSize: [35, 45],
-  });
-
-  const pin2 = new L.icon({
-    iconUrl: marker2,
-    iconSize: [35, 45],
-  });
-
-  const pin3 = new L.icon({
-    iconUrl: marker3,
-    iconSize: [35, 45],
-  });
-
-  const pin4 = new L.icon({
-    iconUrl: marker4,
-    iconSize: [35, 45],
-  });
-
-  const pin5 = new L.icon({
-    iconUrl: marker5,
-    iconSize: [35, 45],
-  });
-
-  const pins = [pin1, pin2, pin3, pin4, pin5];
+  const url = `https://api.maptiler.com/maps/streets-v2/256/{z}/{x}/{y}.png?key=${maptilerKey}`;
 
   const dispatch = useDispatch();
   const { employees } = useSelector((state) => state.employees);
